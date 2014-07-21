@@ -1,0 +1,11 @@
+4907b67e2da03bb8eab1561c6a886c92 *DESCRIPTION
+66663e30d6e6fe257c5171bcb933364b *NAMESPACE
+eb3e9f85752a815a1191a191e837b975 *R/densityClust.R
+6124b789525fcc12858b0a48b9fb5864 *README.md
+4f056fcda1b71b264d149053df64d296 *man/clustered.Rd
+a14480bbd8f56e04ba308824cdbff21d *man/clusters.Rd
+7def222cd117ec2efd669e4b6ec15a6f *man/densityClust-package.Rd
+6e19c9e48a14f3a7e9f91215699943e7 *man/densityClust.Rd
+f7041b1f483da7021a37518592a29b0b *man/estimateDc.Rd
+04fddc54ad2dc4cfd92805c271481fd8 *man/findClusters.Rd
+65dffa68011bc156517cee9b39663bc2 *man/plotMDS.Rd
