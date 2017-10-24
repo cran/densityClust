@@ -7,28 +7,33 @@
 \usage{
 findClusters(x, ...)
 
-\method{findClusters}{densityCluster}(x, rho, delta, plot = FALSE, ...)
+\method{findClusters}{densityCluster}(x, rho, delta, plot = FALSE,
+  peaks = NULL, verbose = FALSE, ...)
 }
 \arguments{
-\item{x}{A densityCluster object as produced by \code{\link{densityClust}}}
+\item{x}{A densityCluster object as produced by \code{\link[=densityClust]{densityClust()}}}
 
-\item{...}{Additional parameters passed on to \code{\link{findClusters.densityCluster}}}
+\item{...}{Additional parameters passed on}
 
 \item{rho}{The threshold for local density when detecting cluster peaks}
 
 \item{delta}{The threshold for minimum distance to higher density when detecting cluster peaks}
 
 \item{plot}{Logical. Should a decision plot be shown after cluster detection}
+
+\item{peaks}{A numeric vector indicates the index of density peaks used for clustering. This vector should be retrieved from the decision plot with caution. No checking involved.}
+
+\item{verbose}{Logical. Should the running details be reported}
 }
 \value{
 A densityCluster object with clusters assigned to all observations
 }
 \description{
 This function uses the supplied rho and delta thresholds to detect cluster
-peaks and assign the rest of the observations to one of these clusters. 
+peaks and assign the rest of the observations to one of these clusters.
 Furthermore core/halo status is calculated. If either rho or delta threshold
 is missing the user is presented with a decision plot where they are able to
-click on the plot area to set the treshold. If either rho or delta is set, 
+click on the plot area to set the treshold. If either rho or delta is set,
 this takes presedence over the value found by clicking.
 }
 \examples{
@@ -42,9 +47,5 @@ split(iris[,5], irisClust$clusters)
 
 }
 \references{
-Rodriguez, A., & Laio, A. (2014). Clustering by fast search and find of density peaks. Science, 344(6191), 1492-1496. doi:10.1126/science.1242072
+Rodriguez, A., & Laio, A. (2014). \emph{Clustering by fast search and find of density peaks.} Science, \strong{344}(6191), 1492-1496. doi:10.1126/science.1242072
 }
-\seealso{
-\code{\link{findClusters}}
-}
-

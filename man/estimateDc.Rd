@@ -17,12 +17,18 @@ estimateDc(distance, neighborRateLow = 0.01, neighborRateHigh = 0.02)
 A numeric value giving the estimated distance cutoff value
 }
 \description{
-This function calculates a distance cutoff value for a specific distance 
+This function calculates a distance cutoff value for a specific distance
 matrix that makes the average neighbor rate (number of points within the
 distance cutoff value) fall between the provided range. The authors of the
-algorithm suggests aiming for a neighbor rate between 1 and 2 percent, but 
+algorithm suggests aiming for a neighbor rate between 1 and 2 percent, but
 also states that the algorithm is quite robust with regards to more extreme
 cases.
+}
+\note{
+If the number of points is larger than 448 (resulting in 100,128
+pairwise distances), 100,128 distance pairs will be randomly selected to
+speed up computation time. Use \code{\link[=set.seed]{set.seed()}} prior to calling
+\code{estimateDc} in order to ensure reproducable results.
 }
 \examples{
 irisDist <- dist(iris[,1:4])
@@ -30,6 +36,5 @@ estimateDc(irisDist)
 
 }
 \references{
-Rodriguez, A., & Laio, A. (2014). Clustering by fast search and find of density peaks. Science, 344(6191), 1492-1496. doi:10.1126/science.1242072
+Rodriguez, A., & Laio, A. (2014). \emph{Clustering by fast search and find of density peaks.} Science, \strong{344}(6191), 1492-1496. doi:10.1126/science.1242072
 }
-
