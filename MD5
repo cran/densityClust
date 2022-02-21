@@ -1,7 +1,7 @@
-1ab269386aff4aeb528238611823b5ee *DESCRIPTION
+745d23a0501cdd8f899632254394916a *DESCRIPTION
 61844946d8093955863c0a91d3dd8705 *NAMESPACE
-30c23fdd0c2c702f96a661278d7a5e4c *R/RcppExports.R
-ff4698819ff59d77100c7a06c6485d55 *R/densityClust.R
+55988bee4ed771754c43c7834d6c0d40 *R/RcppExports.R
+0d150ed77ccbaf8b2b9e8ff052bcd392 *R/densityClust.R
 630a945038bf37962f37efcc07b99108 *R/plotDensityClust.R
 024cd59461d3888628526adf8365d818 *README.md
 42be68192407d5489d6a2b74f7040922 *man/clustered.Rd
@@ -13,10 +13,10 @@ ee83bbf7642b2872eb82552fce1b9146 *man/findClusters.Rd
 83472650d192a2b26d1595c5c10d5298 *man/plotDensityClust.Rd
 16ac60de9a02992eb1673d6ffe9d333a *man/plotMDS.Rd
 91b2473f7511045df290d8c8be1d1236 *man/plotTSNE.Rd
-cdfa9919625ec6d4e4216756b4d2b76f *src/RcppExports.cpp
+e7799b89309afbdc0beedd3f80379d56 *src/RcppExports.cpp
 3ce3f7f78180b7945ced8da583931283 *src/distanceToPeak.cpp
-33a3cd8bb3b103104f7d246fb1e1823b *src/findDistValueByRowColInd.cpp
+a8cedb1550c1260cfc7d46c115bad84b *src/findDistValueByRowColInd.cpp
 db8aca722baac26b4f3e9c34ac6d3058 *src/localDensity.cpp
 45a9550a0d9fb5e170e463c3c03a7f5b *tests/testthat.R
 f8e7596ac614b2ab51c1fc76d8e233f0 *tests/testthat/generateReference.R
-92e64d8c4280f014ff75f720b7aeab62 *tests/testthat/testEquivalenceToReferenceImplementation.R
+2f4d5bb1af4dbbd0bb3911d0587dbedd *tests/testthat/testEquivalenceToReferenceImplementation.R
